@@ -23,7 +23,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>nexus</id>
-      <url>http://192.168.1.60:8081/repository/jenkins-snapshots/</url>
+      <url>http://35.205.121.76:8081/repository/my-java-repo/</url>
     </snapshotRepository>
   </distributionManagement>
   <build>
@@ -79,7 +79,7 @@
         <extensions>true</extensions>
         <configuration>
           <serverId>nexus</serverId>
-          <nexusUrl>http://192.168.1.60:8081/</nexusUrl>
+          <nexusUrl>http://35.205.121.76:8081/</nexusUrl>
         </configuration>
       </plugin>
     </plugins>
