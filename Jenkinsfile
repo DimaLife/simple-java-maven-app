@@ -5,7 +5,7 @@ pipeline {
    
       stage('Pull Source Code') {
           steps {
-              git branch: 'master' , url: 'https://github.com/DimaLife/simple-java-maven-app.git'
+              git credentialsId: 'dimalife', branch: 'master' , url: 'https://github.com/DimaLife/simple-java-maven-app.git'
           }
       }
       
