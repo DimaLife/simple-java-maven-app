@@ -5,7 +5,7 @@ pipeline {
    
       stage('Pull Source Code') {
           steps {
-              git branch: 'danushkevich' , url: 'git@github.com:MNT-Lab/helloworld-project.git'
+              git branch: 'master' , url: 'https://github.com/DimaLife/simple-java-maven-app.git'
           }
       }
       
