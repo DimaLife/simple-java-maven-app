@@ -11,7 +11,7 @@ pipeline {
       
       stage('deploy to kubesphere') {
           steps {
-            kubernetesDeploy(enableConfigSubstitution: false, kubeconfigId: 'jenkins-agent', configs: 'app.yaml')
+            kubernetesDeploy(enableConfigSubstitution: false, kubeconfigId: 'gke', configs: 'app.yaml')
           }
       }
    }
